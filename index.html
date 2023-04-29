@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login/Sign Up Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="form-container sign-up-container">
-        <form>
-          <h1>Create Account</h1>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form>
-          <h1>Sign In</h1>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>To keep connected with us please login with your personal info</p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start journey with us</p>
-            <button class="ghost" id="signUp">Sign Up</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>My Portfolio</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#projects">My Projects</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Insert your about me text here.</p>
+		</section>
+		
+		<section id="projects">
+			<h2>My Projects</h2>
+			<ul>
+				<li>
+					<h3>Project 1</h3>
+					<p>Description of project 1.</p>
+				</li>
+				<li>
+					<h3>Project 2</h3>
+					<p>Description of project 2.</p>
+				</li>
+				<li>
+					<h3>Project 3</h3>
+					<p>Description of project 3.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 My Portfolio. All rights reserved.</p>
+	</footer>
+</body>
 </html>
